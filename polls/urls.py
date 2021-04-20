@@ -1,15 +1,13 @@
 from django.urls import path
-
 from . import views
+
+
 
 urlpatterns = [
     path('', views.index, name='index'),
 
 ]
 
-from django.urls import path
-
-from . import views
 
 urlpatterns = [
     # ex: /polls/
@@ -22,9 +20,7 @@ urlpatterns = [
     path('<int:question_id>/vote/', views.vote, name='vote'),
 ]
 
-from django.urls import path
 
-from . import views
 
 app_name = 'polls'
 urlpatterns = [
@@ -37,9 +33,6 @@ urlpatterns = [
 path('<int:question_id>/vote/', views.vote, name='vote'),
 
 
-from django.urls import path
-
-from . import views
 
 app_name = 'polls'
 urlpatterns = [
